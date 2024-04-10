@@ -14,3 +14,10 @@ Hydra (http://www.thc.org/thc-hydra) starting at 2014-05-19 07:53:33
 pw-inspector Usage Example
 
 Read in a list of passwords (-i /usr/share/wordlists/nmap.lst) and save to a file (-o /root/passes.txt), selecting passwords of a minimum length of 6 (-m 6) and a maximum length of 10 (-M 10):
+
+root@kali:~# pw-inspector -i /usr/share/wordlists/nmap.lst -o /root/passes.txt -m 6 -M 10
+root@kali:~# wc -l /usr/share/wordlists/nmap.lst
+5086 /usr/share/wordlists/nmap.lst
+root@kali:~# wc -l /root/passes.txt
+4490 /root/passes.txt
+
