@@ -126,3 +126,24 @@ Options:
   OPT       some service modules support additional input (-U for module help)
 
 Supported services: adam6500 asterisk cisco cisco-enable cobaltstrike cvs firebird ftp[s] http[s]-{head|get|post} http[s]-{get|post}-form http-proxy http-proxy-urlenum icq imap[s] irc ldap2[s] ldap3[-{cram|digest}md5][s] memcached mongodb mssql mysql nntp oracle-listener oracle-sid pcanywhere pcnfs pop3[s] postgres radmin2 rdp redis rexec rlogin rpcap rsh rtsp s7-300 sip smb smtp[s] smtp-enum snmp socks5 ssh sshkey svn teamspeak telnet[s] vmauthd vnc xmpp
+
+Hydra is a tool to guess/crack valid login/password pairs.
+Licensed under AGPL v3.0. The newest version is always available at;
+https://github.com/vanhauser-thc/thc-hydra
+Please don't use in military or secret service organizations, or for illegal
+purposes. (This is a wish and non-binding - most such people do not care about
+laws and ethics anyway - and tell themselves they are one of the good ones.)
+These services were not compiled in: afp ncp oracle sapr3 smb2.
+
+Use HYDRA_PROXY_HTTP or HYDRA_PROXY environment variables for a proxy setup.
+E.g. % export HYDRA_PROXY=socks5://l:p@127.0.0.1:9150 (or: socks4:// connect://)
+     % export HYDRA_PROXY=connect_and_socks_proxylist.txt  (up to 64 entries)
+     % export HYDRA_PROXY_HTTP=http://login:pass@proxy:8080
+     % export HYDRA_PROXY_HTTP=proxylist.txt  (up to 64 entries)
+
+Examples:
+  hydra -l user -P passlist.txt ftp://192.168.0.1
+  hydra -L userlist.txt -p defaultpw imap://192.168.0.1/PLAIN
+  hydra -C defaults.txt -6 pop3s://[2001:db8::1]:143/TLS:DIGEST-MD5
+  hydra -l admin -p password ftp://[192.168.0.0/24]/
+  hydra -L logins.txt -P pws.txt -M targets.txt ssh
