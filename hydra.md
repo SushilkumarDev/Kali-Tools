@@ -226,3 +226,12 @@ This package provides the GTK+ based GUI for hydra.
 
 Installed size: 107 KB
 How to install: sudo apt install hydra-gtk
+
+Dependencies:
+
+    hydra
+    libatk1.0-0
+    libc6
+    libgdk-pixbuf-2.0-0
+    libglib2.0-0
+    libgtk2.0-0
