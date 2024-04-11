@@ -212,3 +212,17 @@ The return code is the number of valid passwords found, 0 if none was found.
 Use for security: check passwords, if 0 is returned, reject password choice.
 Use for hacking: trim your dictionary file to the pw requirements of the target.
 Usage only allowed for legal purposes.
+
+
+# hydra-gtk
+
+Hydra is a parallelized login cracker which supports numerous protocols to attack. It is very fast and flexible, and new modules are easy to add.
+
+This tool makes it possible for researchers and security consultants to show how easy it would be to gain unauthorized access to a system remotely.
+
+It supports: Cisco AAA, Cisco auth, Cisco enable, CVS, FTP, HTTP(S)-FORM-GET, HTTP(S)-FORM-POST, HTTP(S)-GET, HTTP(S)-HEAD, HTTP-Proxy, ICQ, IMAP, IRC, LDAP, MS-SQL, MySQL, NNTP, Oracle Listener, Oracle SID, PC-Anywhere, PC-NFS, POP3, PostgreSQL, RDP, Rexec, Rlogin, Rsh, SIP, SMB(NT), SMTP, SMTP Enum, SNMP v1+v2+v3, SOCKS5, SSH (v1 and v2), SSHKEY, Subversion, Teamspeak (TS2), Telnet, VMware-Auth, VNC and XMPP.
+
+This package provides the GTK+ based GUI for hydra.
+
+Installed size: 107 KB
+How to install: sudo apt install hydra-gtk
