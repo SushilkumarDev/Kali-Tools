@@ -33,3 +33,25 @@ It supports: Cisco AAA, Cisco auth, Cisco enable, CVS, FTP, HTTP(S)-FORM-GET, HT
 Installed size: 956 KB
 How to install: sudo apt install hydra
 
+Dependencies:
+
+    libapr1
+    libbson-1.0-0
+    libc6
+    libfbclient2
+    libfreerdp2-2
+    libgcrypt20
+    libidn12
+    libmariadb3
+    libmemcached11
+    libmongoc-1.0-0
+    libpcre2-8-0
+    libpq5
+    libssh-4
+    libssl3
+    libsvn1
+    libtinfo6
+    libwinpr2-2
+    zlib1g
+
+    
